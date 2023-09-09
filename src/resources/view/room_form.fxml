@@ -19,10 +19,13 @@
             <Image url="@../images/Rooms.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="66.0" fitWidth="66.0" layoutX="14.0" layoutY="54.0">
+      <ImageView fx:id="btnBack" fitHeight="66.0" fitWidth="66.0" layoutX="14.0" layoutY="54.0" onMouseClicked="#btnBackOnMouseClicked">
          <image>
             <Image url="@../images/back.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
       <TextField fx:id="txtID" layoutX="1413.0" layoutY="280.0" prefHeight="43.0" prefWidth="289.0">
          <cursor>
@@ -60,7 +63,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="btnSave" layoutX="1583.0" layoutY="781.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="43.0" prefWidth="129.0" text="Save">
+      <Button fx:id="btnSave" layoutX="1573.0" layoutY="771.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="43.0" prefWidth="129.0" text="Save">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -82,7 +85,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <TableView layoutX="89.0" layoutY="288.0" prefHeight="383.0" prefWidth="749.0">
+      <TableView fx:id="tblStudent" layoutX="89.0" layoutY="288.0" prefHeight="383.0" prefWidth="749.0">
         <columns>
           <TableColumn fx:id="colID" prefWidth="152.0" text="ID" />
           <TableColumn fx:id="colType" prefWidth="191.0" text="Type" />
