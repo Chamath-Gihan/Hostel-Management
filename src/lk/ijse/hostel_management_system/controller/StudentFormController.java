@@ -57,7 +57,7 @@ public class StudentFormController {
     private TextField txtContact;
 
     @FXML
-    private TextField txtDateOfBirth;
+    private DatePicker txtDateOfBirth;
 
     @FXML
     private TextField txtID;
