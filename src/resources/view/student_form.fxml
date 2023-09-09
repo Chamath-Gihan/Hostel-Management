@@ -3,6 +3,7 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
@@ -44,14 +45,6 @@
          </effect>
       </TextField>
       <TextField fx:id="txtContact" layoutX="1413.0" layoutY="502.0" prefHeight="43.0" prefWidth="289.0">
-         <cursor>
-            <Cursor fx:constant="TEXT" />
-         </cursor>
-         <effect>
-            <Reflection fraction="0.47" topOpacity="0.37" />
-         </effect>
-      </TextField>
-      <TextField fx:id="txtDateOfBirth" layoutX="1413.0" layoutY="576.0" prefHeight="43.0" prefWidth="289.0">
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor>
@@ -122,5 +115,6 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
+      <DatePicker fx:id="txtDateOfBirth" layoutX="1413.0" layoutY="576.0" prefHeight="43.0" prefWidth="289.0" />
    </children>
 </AnchorPane>
