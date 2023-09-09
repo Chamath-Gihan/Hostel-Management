@@ -9,6 +9,9 @@ import javafx.scene.input.MouseEvent;
 public class RoomFormController {
 
     @FXML
+    private AnchorPane root;
+
+    @FXML
     private ImageView btnBack;
 
     @FXML
