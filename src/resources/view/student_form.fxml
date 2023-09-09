@@ -15,7 +15,7 @@
 
 <AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel_management_system.controller.StudentFormController">
    <children>
-      <ImageView fx:id="root" fitHeight="960.0" fitWidth="1920.0">
+      <ImageView fitHeight="960.0" fitWidth="1920.0">
          <image>
             <Image url="@../images/Students.jpg" />
          </image>
