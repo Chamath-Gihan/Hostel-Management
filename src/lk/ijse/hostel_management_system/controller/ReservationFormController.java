@@ -5,8 +5,12 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 
 public class ReservationFormController {
+
+    @FXML
+    private AnchorPane root;
 
     @FXML
     private ImageView btnBack;
