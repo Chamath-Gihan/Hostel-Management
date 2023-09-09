@@ -10,6 +10,12 @@ import javafx.scene.image.Image;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Paint;
+import lk.ijse.hostel_management_system.bo.BOFactory;
+import lk.ijse.hostel_management_system.bo.custom.UserBO;
+import lk.ijse.hostel_management_system.util.Navigation;
+import lk.ijse.hostel_management_system.util.Routes;
+
+import java.io.IOException;
 
 public class LoginFormController {
 
@@ -38,22 +44,19 @@ public class LoginFormController {
     }
 
     @FXML
-    void btnLoginOnAction(ActionEvent event) {
+    void btnLoginOnAction(ActionEvent event) throws IOException {
         Shake shakeUserName = new Shake(txtUserName);
         Shake shakePassword = new Shake(txtPassword);
 
         if( isCorrectPassword() && isCorrectUserName()){
-            txtUserName.setFocusColor(Paint.valueOf("BLUE"));
-            Navigation.navigate(Routes.DASHBOARD, pane);
-            new FadeIn(pane).setSpeed(3).play();
+            Navigation.navigate(Routes.DASHBOARD, root);
+            new FadeIn(root).setSpeed(3).play();
 
         }else if (isCorrectPassword() && !isCorrectUserName()) {
             txtUserName.requestFocus();
-            txtUserName.setFocusColor(Paint.valueOf("RED"));
             shakeUserName.play();
         } else if (!isCorrectPassword() && isCorrectUserName()) {
             txtPassword.requestFocus();
-            txtPassword.setFocusColor(Paint.valueOf("RED"));
             shakePassword.play();
         } else{
             new Alert(Alert.AlertType.ERROR,"Try again !").show();

@@ -5,9 +5,9 @@
 
 package lk.ijse.hostel_management_system.bo.custom;
 
-import lk.ijse.hms.bo.SuperBO;
+import lk.ijse.hostel_management_system.bo.SuperBO;
 
-public interface UserBO extends lk.ijse.hms.bo.SuperBO {
+public interface UserBO extends lk.ijse.hostel_management_system.bo.SuperBO {
     String getUser(String id);
 
     String getPassword(String id);

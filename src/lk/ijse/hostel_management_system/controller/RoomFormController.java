@@ -6,6 +6,10 @@ import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import lk.ijse.hostel_management_system.util.Navigation;
+import lk.ijse.hostel_management_system.util.Routes;
+
+import java.io.IOException;
 
 public class RoomFormController {
 
@@ -52,8 +56,8 @@ public class RoomFormController {
     private TextField txtQty;
 
     @FXML
-    void btnBackOnMouseClicked(MouseEvent event) {
-
+    void btnBackOnMouseClicked(MouseEvent event) throws IOException {
+        Navigation.navigate(Routes.DASHBOARD, root);
     }
 
     @FXML

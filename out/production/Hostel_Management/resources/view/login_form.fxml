@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.effect.Reflection?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -16,7 +18,7 @@
          </image>
       </ImageView>
       <TextField fx:id="txtUserName" layoutX="1271.0" layoutY="383.0" prefHeight="59.0" prefWidth="370.0" />
-      <TextField fx:id="txtPassword" layoutX="1271.0" layoutY="489.0" prefHeight="59.0" prefWidth="370.0" />
+      <TextField fx:id="txtPassword" layoutX="1271.0" layoutY="489.0" onKeyPressed="#txtPasswordOnKeyPressed" prefHeight="59.0" prefWidth="370.0" />
       <Button fx:id="btnLogin" layoutX="1392.0" layoutY="626.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="43.0" prefWidth="129.0" text="Login">
          <effect>
             <Reflection />
@@ -25,5 +27,11 @@
             <Font size="18.0" />
          </font>
       </Button>
+      <ToggleButton fx:id="toggleButton" layoutX="1610.0" layoutY="507.0" mnemonicParsing="false" />
+      <Label fx:id="lblShownPassword" layoutX="1284.0" layoutY="574.0" prefHeight="30.0" prefWidth="334.0" text="Label" textFill="#8a85e4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

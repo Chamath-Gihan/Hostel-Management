@@ -1,16 +1,10 @@
-/*
- * Kasun Miuranga
- * Copyright (c) 2023
- */
-
 package lk.ijse.hostel_management_system.bo.custom;
 
-import lk.ijse.hms.bo.SuperBO;
-import lk.ijse.hms.dto.StudentDTO;
+import lk.ijse.hostel_management_system.dto.StudentDTO;
 
 import java.util.ArrayList;
 
-public interface StudentBO extends lk.ijse.hms.bo.SuperBO {
+public interface StudentBO extends lk.ijse.hostel_management_system.bo.SuperBO {
     Boolean addStudent(StudentDTO studentDTO);
 
     Boolean deleteStudent(StudentDTO studentDTO);

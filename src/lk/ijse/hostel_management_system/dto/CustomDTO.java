@@ -33,6 +33,10 @@ public class CustomDTO {
     private String dob;
     private String gender;
 
+    public CustomDTO(String res_id, LocalDate res_date, String room_type_id, String type, String id, String name, String key_money, String status) {
+
+    }
+
     @Override
     public String toString() {
         return "CustomDTO{" +

@@ -19,6 +19,10 @@ public class Room {
     @OneToMany(mappedBy = "room" ,cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Reservation> reservationList = new ArrayList<>();
 
+    public Room(String room_type_id, String type, String key_money, int qty) {
+
+    }
+
     @Override
     public String toString() {
         return "Room{" +

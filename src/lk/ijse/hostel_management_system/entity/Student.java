@@ -19,6 +19,10 @@ public class Student {
     @OneToMany(mappedBy = "student" ,cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Reservation> reservationList = new ArrayList<>();
 
+    public Student(String id, String name, String address, String contact_no, String dob, String gender) {
+
+    }
+
     @Override
     public String toString() {
         return "Student{" +

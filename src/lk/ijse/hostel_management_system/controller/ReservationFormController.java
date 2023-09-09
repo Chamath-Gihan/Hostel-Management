@@ -6,6 +6,10 @@ import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import lk.ijse.hostel_management_system.util.Navigation;
+import lk.ijse.hostel_management_system.util.Routes;
+
+import java.io.IOException;
 
 public class ReservationFormController {
 
@@ -91,8 +95,8 @@ public class ReservationFormController {
     private TextField txtStudentId;
 
     @FXML
-    void btnBackOnAction(MouseEvent event) {
-
+    void btnBackOnAction(MouseEvent event) throws IOException {
+        Navigation.navigate(Routes.DASHBOARD, root);
     }
 
     @FXML

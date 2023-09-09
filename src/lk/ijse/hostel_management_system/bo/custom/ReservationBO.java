@@ -5,15 +5,14 @@
 
 package lk.ijse.hostel_management_system.bo.custom;
 
-import lk.ijse.hms.bo.SuperBO;
-import lk.ijse.hms.dto.CustomDTO;
-import lk.ijse.hms.dto.ReservationDTO;
-import lk.ijse.hms.dto.RoomsDTO;
-import lk.ijse.hms.dto.StudentDTO;
+import lk.ijse.hostel_management_system.dto.CustomDTO;
+import lk.ijse.hostel_management_system.dto.ReservationDTO;
+import lk.ijse.hostel_management_system.dto.RoomsDTO;
+import lk.ijse.hostel_management_system.dto.StudentDTO;
 
 import java.util.ArrayList;
 
-public interface ReservationBO extends lk.ijse.hms.bo.SuperBO {
+public interface ReservationBO extends lk.ijse.hostel_management_system.bo.SuperBO {
     String getCurrentID();
 
     ArrayList<RoomsDTO> getRoomsData();

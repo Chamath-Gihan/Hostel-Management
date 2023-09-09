@@ -1,15 +1,10 @@
-/*
- * Kasun Miuranga
- * Copyright (c) 2023
- */
-
 package lk.ijse.hostel_management_system.bo.custom.impl;
 
-import lk.ijse.hms.bo.custom.RoomsBO;
-import lk.ijse.hms.dao.FactoryDAO;
-import lk.ijse.hms.dao.custom.RoomsDAO;
-import lk.ijse.hms.dto.RoomsDTO;
-import lk.ijse.hms.entity.Room;
+import lk.ijse.hostel_management_system.bo.custom.RoomsBO;
+import lk.ijse.hostel_management_system.dao.FactoryDAO;
+import lk.ijse.hostel_management_system.dao.custom.RoomsDAO;
+import lk.ijse.hostel_management_system.dto.RoomsDTO;
+import lk.ijse.hostel_management_system.entity.Room;
 
 import java.util.ArrayList;
 

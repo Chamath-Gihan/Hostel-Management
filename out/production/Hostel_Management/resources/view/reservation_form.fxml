@@ -21,7 +21,7 @@
             <Image url="@../images/Reservations.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="btnBack" fitHeight="64.0" fitWidth="64.0" layoutX="27.0" layoutY="60.0" onDragDetected="#btnBackOnAction">
+      <ImageView fx:id="btnBack" fitHeight="64.0" fitWidth="64.0" layoutX="27.0" layoutY="60.0" onMouseClicked="#btnBackOnAction">
          <image>
             <Image url="@../images/back.png" />
          </image>

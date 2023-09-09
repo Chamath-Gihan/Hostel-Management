@@ -1,16 +1,11 @@
-/*
- * Kasun Miuranga
- * Copyright (c) 2023
- */
-
 package lk.ijse.hostel_management_system.bo.custom;
 
-import lk.ijse.hms.bo.SuperBO;
-import lk.ijse.hms.dto.RoomsDTO;
+
+import lk.ijse.hostel_management_system.dto.RoomsDTO;
 
 import java.util.ArrayList;
 
-public interface RoomsBO extends lk.ijse.hms.bo.SuperBO {
+public interface RoomsBO extends lk.ijse.hostel_management_system.bo.SuperBO {
     Boolean addRoom(RoomsDTO roomsDTO);
 
     Boolean deleteRoom(RoomsDTO roomsDTO);

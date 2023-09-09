@@ -1,15 +1,10 @@
-/*
- * Kasun Miuranga
- * Copyright (c) 2023
- */
-
 package lk.ijse.hostel_management_system.bo.custom.impl;
 
-import lk.ijse.hms.bo.custom.StudentBO;
-import lk.ijse.hms.dao.FactoryDAO;
-import lk.ijse.hms.dao.custom.StudentDAO;
-import lk.ijse.hms.dto.StudentDTO;
-import lk.ijse.hms.entity.Student;
+import lk.ijse.hostel_management_system.bo.custom.StudentBO;
+import lk.ijse.hostel_management_system.dao.FactoryDAO;
+import lk.ijse.hostel_management_system.dao.custom.StudentDAO;
+import lk.ijse.hostel_management_system.dto.StudentDTO;
+import lk.ijse.hostel_management_system.entity.Student;
 
 import java.util.ArrayList;
 
@@ -24,7 +19,14 @@ public class StudentBOImpl implements StudentBO {
                 studentDTO.getContact_no(),
                 studentDTO.getDob(),
                 studentDTO.getGender());
-
+        student.setId(studentDTO.getId());
+        student.setName(studentDTO.getName());
+        student.setAddress(studentDTO.getAddress());
+        student.setContact_no(studentDTO.getContact_no());
+        student.setDob(studentDTO.getDob());
+        student.setGender(studentDTO.getGender());
+        System.out.println(studentDTO.getId());
+        System.out.println(student.getId());
         return studentDAO.add(student);
     }
 
@@ -59,7 +61,14 @@ public class StudentBOImpl implements StudentBO {
                 studentDTO.getContact_no(),
                 studentDTO.getDob(),
                 studentDTO.getGender());
-
+        student.setId(studentDTO.getId());
+        student.setName(studentDTO.getName());
+        student.setAddress(studentDTO.getAddress());
+        student.setContact_no(studentDTO.getContact_no());
+        student.setDob(studentDTO.getDob());
+        student.setGender(studentDTO.getGender());
+        System.out.println(studentDTO.getId());
+        System.out.println(student.getId());
         return studentDAO.update(student);
     }
 }

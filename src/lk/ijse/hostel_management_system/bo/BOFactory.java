@@ -1,23 +1,18 @@
-/*
- * Kasun Miuranga
- * Copyright (c) 2023
- */
-
 package lk.ijse.hostel_management_system.bo;
 
-import lk.ijse.hms.bo.custom.impl.ReservationBOImpl;
-import lk.ijse.hms.bo.custom.impl.RoomsBOImpl;
-import lk.ijse.hms.bo.custom.impl.StudentBOImpl;
-import lk.ijse.hms.bo.custom.impl.UserBOImpl;
+import lk.ijse.hostel_management_system.bo.custom.impl.ReservationBOImpl;
+import lk.ijse.hostel_management_system.bo.custom.impl.RoomsBOImpl;
+import lk.ijse.hostel_management_system.bo.custom.impl.StudentBOImpl;
+import lk.ijse.hostel_management_system.bo.custom.impl.UserBOImpl;
 
 public class BOFactory {
-    private static lk.ijse.hms.bo.BOFactory boFactory;
+    private static lk.ijse.hostel_management_system.bo.BOFactory boFactory;
 
     private BOFactory() {
     }
 
-    public static lk.ijse.hms.bo.BOFactory getBoFactory() {
-        return boFactory == null ? boFactory = new lk.ijse.hms.bo.BOFactory() : boFactory;
+    public static lk.ijse.hostel_management_system.bo.BOFactory getBoFactory() {
+        return boFactory == null ? boFactory = new lk.ijse.hostel_management_system.bo.BOFactory() : boFactory;
     }
 
     public enum Type {
@@ -27,7 +22,7 @@ public class BOFactory {
         USER
     }
 
-    public lk.ijse.hms.bo.SuperBO getBO(Type type) {
+    public SuperBO getBO(Type type) {
         switch (type) {
             case STUDENT:
                 return new StudentBOImpl();

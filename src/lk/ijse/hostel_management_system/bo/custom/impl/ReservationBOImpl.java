@@ -1,24 +1,19 @@
-/*
- * Kasun Miuranga
- * Copyright (c) 2023
- */
-
 package lk.ijse.hostel_management_system.bo.custom.impl;
 
-import lk.ijse.hms.bo.custom.ReservationBO;
-import lk.ijse.hms.dao.FactoryDAO;
-import lk.ijse.hms.dao.custom.QueryDAO;
-import lk.ijse.hms.dao.custom.ReservationDAO;
-import lk.ijse.hms.dao.custom.RoomsDAO;
-import lk.ijse.hms.dao.custom.StudentDAO;
-import lk.ijse.hms.dto.CustomDTO;
-import lk.ijse.hms.dto.ReservationDTO;
-import lk.ijse.hms.dto.RoomsDTO;
-import lk.ijse.hms.dto.StudentDTO;
-import lk.ijse.hms.entity.CustomEntity;
-import lk.ijse.hms.entity.Reservation;
-import lk.ijse.hms.entity.Room;
-import lk.ijse.hms.entity.Student;
+import lk.ijse.hostel_management_system.bo.custom.ReservationBO;
+import lk.ijse.hostel_management_system.dao.FactoryDAO;
+import lk.ijse.hostel_management_system.dao.custom.QueryDAO;
+import lk.ijse.hostel_management_system.dao.custom.ReservationDAO;
+import lk.ijse.hostel_management_system.dao.custom.RoomsDAO;
+import lk.ijse.hostel_management_system.dao.custom.StudentDAO;
+import lk.ijse.hostel_management_system.dto.CustomDTO;
+import lk.ijse.hostel_management_system.dto.ReservationDTO;
+import lk.ijse.hostel_management_system.dto.RoomsDTO;
+import lk.ijse.hostel_management_system.dto.StudentDTO;
+import lk.ijse.hostel_management_system.entity.CustomerEntity;
+import lk.ijse.hostel_management_system.entity.Reservation;
+import lk.ijse.hostel_management_system.entity.Room;
+import lk.ijse.hostel_management_system.entity.Student;
 
 import java.util.ArrayList;
 
@@ -66,9 +61,9 @@ public class ReservationBOImpl implements ReservationBO {
     @Override
     public ArrayList<CustomDTO> getReservationData() {
         ArrayList<CustomDTO> customDTOS = new ArrayList<>();
-        ArrayList<CustomEntity> customEntities = queryDAO.getData();
+        ArrayList<CustomerEntity> customEntities = queryDAO.getData();
 
-        for (CustomEntity c : customEntities) {
+        for (CustomerEntity c : customEntities) {
             customDTOS.add(new CustomDTO(
                     c.getRes_id(),
                     c.getRes_date(),
