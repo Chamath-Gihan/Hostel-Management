@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.hostel_management_system.controller.ReservationFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel_management_system.controller.ReservationFormController">
+   <children>
+      <ImageView fitHeight="960.0" fitWidth="1920.0">
+         <image>
+            <Image url="@../images/Reservations.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnBack" fitHeight="64.0" fitWidth="64.0" layoutX="27.0" layoutY="60.0" onDragDetected="#btnBackOnAction">
+         <image>
+            <Image url="@../images/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
 </AnchorPane>
