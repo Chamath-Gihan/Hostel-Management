@@ -5,8 +5,12 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 
 public class StudentFormController {
+
+    @FXML
+    private AnchorPane root;
 
     @FXML
     private ImageView btnBack;
@@ -43,9 +47,6 @@ public class StudentFormController {
 
     @FXML
     private TableColumn<?, ?> colName;
-
-    @FXML
-    private ImageView root;
 
     @FXML
     private TableView<?> tblStudent;
