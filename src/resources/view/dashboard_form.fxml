@@ -1,14 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.hostel_management_system.controller.DashBoardFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="root1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel_management_system.controller.DashBoardFormController">
+   <children>
+      <ImageView fitHeight="960.0" fitWidth="1920.0">
+         <image>
+            <Image url="@../images/dash board.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnStudents" layoutX="1401.0" layoutY="216.0" onMouseClicked="#btnStudentOnMouseClicked">
+         <image>
+            <Image url="@../images/student.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="btnRooms" layoutX="1401.0" layoutY="430.0" onMouseClicked="#btnRoomsOnMouseClicked">
+         <image>
+            <Image url="@../images/room.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="btnHostel" layoutX="29.0" layoutY="27.0" onMouseClicked="#btnHostelOnMouseClicked">
+         <image>
+            <Image url="@../images/hostel.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="btnReservation" layoutX="1401.0" layoutY="640.0" onMouseClicked="#btnReservationOnMouseClicked">
+         <image>
+            <Image url="@../images/reservation.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect>
+      </ImageView>
+      <AnchorPane fx:id="root2" layoutX="159.0" layoutY="53.0" prefHeight="854.0" prefWidth="740.0" />
+   </children>
 </AnchorPane>
