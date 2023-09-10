@@ -85,7 +85,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <TableView fx:id="tblStudent" layoutX="89.0" layoutY="288.0" prefHeight="383.0" prefWidth="749.0">
+      <TableView fx:id="tblRooms" layoutX="89.0" layoutY="288.0" prefHeight="383.0" prefWidth="749.0">
         <columns>
           <TableColumn fx:id="colID" prefWidth="152.0" text="ID" />
           <TableColumn fx:id="colType" prefWidth="191.0" text="Type" />

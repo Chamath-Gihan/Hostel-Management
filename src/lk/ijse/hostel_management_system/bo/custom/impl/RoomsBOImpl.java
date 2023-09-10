@@ -19,7 +19,10 @@ public class RoomsBOImpl implements RoomsBO {
                 roomsDTO.getType(),
                 roomsDTO.getKey_money(),
                 roomsDTO.getQty());
-
+        room.setRoom_type_id(roomsDTO.getRoom_type_id());
+        room.setType(roomsDTO.getType());
+        room.setKey_money(roomsDTO.getKey_money());
+        room.setQty(roomsDTO.getQty());
         return roomDAO.add(room);
     }
 
@@ -54,7 +57,10 @@ public class RoomsBOImpl implements RoomsBO {
                 roomsDTO.getType(),
                 roomsDTO.getKey_money(),
                 roomsDTO.getQty());
-
+        room.setRoom_type_id(roomsDTO.getRoom_type_id());
+        room.setType(roomsDTO.getType());
+        room.setKey_money(roomsDTO.getKey_money());
+        room.setQty(roomsDTO.getQty());
         return roomDAO.update(room);
     }
 }
